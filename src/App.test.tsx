@@ -11,5 +11,7 @@ describe("App", () => {
     expect(
       await screen.findByRole("button", { name: "Foo" })
     ).toBeInTheDocument();
+
+    screen.debug();
   });
 });
